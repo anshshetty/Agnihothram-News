@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.newsagni">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+
+        android:name=".ThisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".signInGoogle"/>
+
+        <activity android:name="com.app.newsagni.ActivityMain" />
+        <activity android:name="com.app.newsagni.ActivitySplash">
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.newsagni.ActivityPostDetails" />
+        <activity android:name="com.app.newsagni.ActivityCategoryDetails" />
+        <activity android:name="com.app.newsagni.ActivityWebView" />
+        <activity android:name="com.app.newsagni.signOutGoogle" />
+        <activity
+        android:name="com.app.newsagni.ActivitySettings"
+        android:theme="@style/AppThemeSetting" />
+
+
+
+        <activity
+            android:name="com.app.newsagni.ActivitySearch"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- Ads activity -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+        <!-- fireBase iid service] -->
+        <service
+            android:name="com.app.newsagni.fcm.FcmInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- fireBase service -->
+        <service
+            android:name="com.app.newsagni.fcm.FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

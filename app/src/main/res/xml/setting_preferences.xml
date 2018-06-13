@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory android:title="@string/pref_group_notif">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/pref_title_notif"
+            android:title="@string/pref_title_notif" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="@string/pref_title_notif"
+            android:key="@string/pref_title_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/pref_title_ringtone" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_title_notif"
+            android:key="@string/pref_title_vibrate"
+            android:title="@string/pref_title_vibrate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_group_others">
+        <Preference
+            android:summary="@string/developer_email"
+            android:title="@string/pref_title_dev_email" />
+        <Preference
+            android:summary="@string/copyright"
+            android:title="@string/pref_title_copyright" />
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/pref_title_build" />
+        <Preference
+            android:key="@string/pref_title_term"
+            android:title="@string/pref_title_term" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

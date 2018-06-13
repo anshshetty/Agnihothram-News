@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "5455387091",
+    "firebase_url": "https://agnihothram-final.firebaseio.com",
+    "project_id": "agnihothram-final",
+    "storage_bucket": "agnihothram-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5455387091:android:0342df2aa3d9c7fb",
+        "android_client_info": {
+          "package_name": "com.app.newsagni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5455387091-66o00ol87vun51ejl2iskq1r7je04h1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.newsagni",
+            "certificate_hash": "c7b2d659ae2819aee61a6584ffabd85929793a29"
+          }
+        },
+        {
+          "client_id": "5455387091-4rtme4od19jmpjl9oh2naep7dorjk6l9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "5455387091-4rtme4od19jmpjl9oh2naep7dorjk6l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCChBf-O7nNGfh-noTl6P7l0jdcFCGN4NQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5455387091-4rtme4od19jmpjl9oh2naep7dorjk6l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

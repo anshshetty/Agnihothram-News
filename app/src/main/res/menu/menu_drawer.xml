@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/title_nav_home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_nav_category"
+            android:title="@string/title_nav_category" />
+        <item
+            android:id="@+id/nav_later"
+            android:icon="@drawable/ic_nav_later"
+            android:title="@string/title_nav_later" />
+    </group>
+
+    <item android:title="@string/sub_title_nav_others">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_nav_setting"
+                android:title="@string/title_nav_setting" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_nav_rate"
+                android:title="@string/title_nav_rate" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_nav_about"
+                android:title="@string/title_nav_about" />
+
+
+
+        </menu>
+    </item>
+
+</menu>
